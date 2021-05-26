@@ -17,7 +17,7 @@ import misc
 
 def classify(model_path, testing_data_path, out_fingerprint_dir):
 
-    labels_1 = ['ProGAN_Generated', 'DenoisedProGANGenerated']
+    labels_1 = [ 'DenoisedProGANGenerated','ProGAN_Generated']
     labels_2 = ['CelebA_real_data', 'ProGAN_seed_0_generated_data ', 'ProGAN_seed_1_generated_data', 'ProGAN_seed_2_generated_data', 'ProGAN_seed_3_generated_data', 'ProGAN_seed_4_generated_data', 'ProGAN_seed_5_generated_data', 'ProGAN_seed_6_generated_data', 'ProGAN_seed_7_generated_data', 'ProGAN_seed_8_generated_data', 'ProGAN_seed_9_generated_data']
 
     print('Loading network...')
