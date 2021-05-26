@@ -313,6 +313,9 @@ def train_classifier(
             
             if cur_tick % network_snapshot_ticks == 0 or done:
                 misc.save_pkl((EG, D_rec, EGs), os.path.join(result_subdir, 'network-snapshot-%06d.pkl' % (cur_nimg // 1000)))
+            
+            misc.save_pkl((EG, D_rec, EGs), os.path.join(result_subdir, 'network-snapshot-%06d.pkl' % (cur_nimg // 1000)))
+            
 
             # Record start time of the next tick.
             tick_start_time = time.time()
